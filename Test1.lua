@@ -20,6 +20,7 @@ while true do
         CiscoCLI.t_Delay(900)
 
     end
+    -- F10
     if CiscoCLI.GetAsyncKeyState(0x79) then
         break
     end
