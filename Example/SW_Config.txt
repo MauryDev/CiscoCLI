@@ -1,0 +1,11 @@
+enable
+config t
+hostname S{2}
+ip default-gateway 192.168.100.{3}
+interface vlan 1
+ip address 192.168.100.{1} 255.255.255.224
+no shutdown
+interface f0/1
+switchport access vlan 1
+end
+wr
